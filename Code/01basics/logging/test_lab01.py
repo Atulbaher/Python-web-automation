@@ -13,11 +13,19 @@
 # QA -> Focus -> TEst case
 
 from selenium import webdriver
+import logging
 
 def test_open_login():
     driver = webdriver.Chrome()
+    LOGGER = logging.getLogger(__name__)
 #Create a session with POST Request, (API POST Request)
 # Fresh Chrome Browser will be open, Session ID is created.
+#SessionId - 68614348f0cb4f521b963ed00eefbd0a
     driver.get("https://google.com")
     driver.maximize_window()
-    print(driver.title)
+    LOGGER.info(driver.title)
+    print("This is ATUL")
+
+
+# 1 Session id -> close ID will be deleted
+# Multiple windows in same session.
