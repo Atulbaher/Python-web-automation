@@ -17,3 +17,7 @@
 2. git commit -m "message"
 3. git push
 4. git pull ( if you have adsded something on github)
+
+
+## How to run your Testcase Parallelly
+pip install pytest-xdist pytest -n auto code/8_JAN_2024/test_Lab14.py -s -v
